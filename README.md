@@ -4,6 +4,8 @@ An independent, practical engineering workflow for coding agents. It turns softw
 
 It is for people using Codex or another coding agent on codebases, bugs, tests, web interfaces, APIs, data, or infrastructure. It is useful when an agent needs to understand the relevant system, make a scoped change, and show evidence for the result. The plugin supplies instructions; it does not change the underlying model or guarantee an outcome.
 
+The [site made for João Fecchio](https://msq-b12.github.io/joao-fecchio-site/) is a separate companion project, with its own [source repository](https://github.com/mSq-b12/joao-fecchio-site). This repository contains the installable skill, not the site's code or deployment workflow.
+
 > **Independent project:** This is not an Anthropic or OpenAI product, Claude Code, or Codex itself. It contains no Claude model and is not endorsed by either company. It adapts ideas from publicly available engineering and agent documentation for use with Codex and other coding agents.
 
 ## Install in Codex
