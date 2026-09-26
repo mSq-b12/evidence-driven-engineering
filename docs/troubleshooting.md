@@ -12,9 +12,9 @@
 
 **Symptom:** `codex plugin marketplace add` says the repository/source cannot be resolved.
 
-**Diagnose:** Confirm Git access, `OWNER/repository` spelling, and whether the chosen tag/branch exists. For a local development source, run the command from the repository root with `codex plugin marketplace add .`.
+**Diagnose:** Confirm Git access, `mSq-b12/evidence-driven-engineering` spelling, and whether the chosen tag/branch exists. For a local development source, run the command from the repository root with `codex plugin marketplace add .`.
 
-**Fix:** Correct the source/ref and retry. The public GitHub URL is not embedded here because the repository owner/destination has not been supplied.
+**Fix:** Correct the source/ref and retry. For a stable release, use the published tag shown on the site or in the GitHub release.
 
 ## Old skill version remains
 

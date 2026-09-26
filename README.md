@@ -10,22 +10,28 @@ It is for people using Codex or another coding agent on codebases, bugs, tests, 
 
 Requirements: a current Codex desktop app or Codex CLI with plugin marketplace support, and Git access to this repository.
 
-1. Add a specific stable release as a marketplace source (replace `OWNER` with the eventual GitHub account or organization):
+1. Add the stable release as a marketplace source:
 
    ```sh
-   codex plugin marketplace add OWNER/evidence-driven-engineering@v1.0.0
+   codex plugin marketplace add mSq-b12/evidence-driven-engineering@v1.0.0
    ```
 
    For development builds only, you can track the moving default branch instead:
 
    ```sh
-   codex plugin marketplace add OWNER/evidence-driven-engineering@main
+   codex plugin marketplace add mSq-b12/evidence-driven-engineering@main
    ```
 
-2. In Codex, open **Plugins**, select the **Evidence-driven Engineering** marketplace, and install **Evidence-driven Engineering**. Start a new task/session if the skill is not immediately discoverable.
+2. In Codex, open **Plugins**, select the **Evidence-driven Engineering** marketplace, and install **Evidence-driven Engineering**. On CLI versions that expose `codex plugin add`, this command is also available:
+
+   ```sh
+   codex plugin add evidence-driven-engineering@evidence-driven-engineering
+   ```
+
+   Start a new task/session if the skill is not immediately discoverable.
 3. Ask Codex to use the skill, or give it a software-engineering task that matches the skill description.
 
-The CLI command adds the marketplace source; it does **not** itself install the plugin. Plugin installation is completed through the supported Plugins interface. No shell installer, elevated permissions, telemetry, or external runtime dependencies are used.
+The marketplace command adds the source; it does **not** itself install the plugin. Install through the supported Plugins interface or the `codex plugin add` command when present in your CLI version. No shell installer, elevated permissions, telemetry, or external runtime dependencies are used.
 
 ## Quick start
 

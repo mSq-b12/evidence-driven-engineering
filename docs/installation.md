@@ -4,21 +4,27 @@ This guide describes Codex's supported Git marketplace and plugin flow. Exact UI
 
 ## Add and install
 
-1. Ensure Codex CLI is available. Add the repository using its actual GitHub owner/repository slug:
+1. Ensure Codex CLI is available. Add the stable repository release:
 
    ```sh
-   codex plugin marketplace add OWNER/evidence-driven-engineering@v1.0.0
+   codex plugin marketplace add mSq-b12/evidence-driven-engineering@v1.0.0
    ```
 
 2. For development builds instead of a stable release, optionally follow the moving default branch:
 
    ```sh
-   codex plugin marketplace add OWNER/evidence-driven-engineering@main
+   codex plugin marketplace add mSq-b12/evidence-driven-engineering@main
    ```
 
-3. Open Codex's Plugins interface, choose the `Evidence-driven Engineering` marketplace, and install the plugin. Start a new task/session for discovery if needed.
+3. Open Codex's Plugins interface, choose the `Evidence-driven Engineering` marketplace, and install the plugin. Current CLI versions that provide `codex plugin add` can instead run:
 
-The CLI command adds a source; it is not an install command. Codex's UI performs plugin installation and controls enablement.
+   ```sh
+   codex plugin add evidence-driven-engineering@evidence-driven-engineering
+   ```
+
+   Start a new task/session for discovery if needed.
+
+The marketplace command adds a source; it is not an install command. The Plugins UI, or `codex plugin add` on versions that offer it, performs installation.
 
 ## Verify
 
@@ -43,7 +49,7 @@ Then refresh/restart the Codex Plugins view if needed. A moving branch such as `
 
 ```sh
 codex plugin marketplace remove evidence-driven-engineering
-codex plugin marketplace add OWNER/evidence-driven-engineering@v1.1.0
+codex plugin marketplace add mSq-b12/evidence-driven-engineering@v1.1.0
 ```
 
 ## Remove
@@ -62,7 +68,7 @@ Use Codex's installed-plugin controls to disable/uninstall the active version, r
 
 ```sh
 codex plugin marketplace remove evidence-driven-engineering
-codex plugin marketplace add OWNER/evidence-driven-engineering@v1.0.0
+codex plugin marketplace add mSq-b12/evidence-driven-engineering@v1.0.0
 ```
 
 Replace the tag with the desired prior release. Marketplace source changes and the installed plugin's state remain separate.
