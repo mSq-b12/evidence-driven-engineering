@@ -1,0 +1,10 @@
+name: Feature request
+description: Suggest a focused capability or documentation improvement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and proposed improvement
+      description: Explain who needs this and what outcome would improve.
+    validations:
+      required: true

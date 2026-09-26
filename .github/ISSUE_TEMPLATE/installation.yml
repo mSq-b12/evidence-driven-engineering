@@ -1,0 +1,16 @@
+name: Installation issue
+description: Report a marketplace or plugin installation problem
+body:
+  - type: input
+    id: codex-version
+    attributes:
+      label: Codex version/surface
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and exact error
+      description: Include the marketplace command and error output. Remove tokens and personal information.
+    validations:
+      required: true
