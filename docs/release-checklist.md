@@ -8,7 +8,7 @@
 - [ ] Inspect the full diff for broken references, personal paths, credentials, logs, caches, and unintended files.
 - [ ] Confirm only the canonical skill directory contains `SKILL.md`.
 - [ ] Review README install/update/remove commands against current official Codex documentation.
-- [ ] Create annotated tag `vMAJOR.MINOR.PATCH` and prepare release notes from the changelog.
+- [ ] Create annotated tag `vMAJOR.MINOR.PATCH`, push it, and publish a GitHub Release using the matching changelog notes. No binary artifact is necessary; the tagged Git source is the installable package.
 - [ ] Keep the plugin's source release in Git; no downloadable installer/archive is needed. For stronger pinning, publish the exact commit SHA and let users select it where Codex supports SHA refs.
 - [ ] Verify a clean clone can run the documented checks.
 - [ ] If submitting to the universal Plugins Directory, complete verified identity, listing assets/text, test cases, policy attestations, review, and explicit publish in the portal.
