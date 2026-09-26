@@ -22,6 +22,8 @@ The marketplace-add command registers a marketplace source; plugin installation 
 
 Avoid duplicating a current version in `SKILL.md` metadata because Codex skill frontmatter's portable contract is `name` and `description`; version belongs to the containing plugin release. Changelog entries retain historical release numbers as usual.
 
+The initial manifest is prepared at `1.0.0`. No release tag or GitHub release is claimed until the release checklist—including actual Codex Plugins UI installation/discovery—is completed.
+
 ## Compatibility and trust
 
 The skill uses a standard `SKILL.md` plus relative Markdown references. The plugin has no MCP server, network client, hooks, external dependencies, or lifecycle commands. Marketplace/Plugin installation is still a trust decision: inspect a release and its source before enabling it. Codex marketplace support and UI behavior can evolve; consult the current official documentation before changing this packaging format.

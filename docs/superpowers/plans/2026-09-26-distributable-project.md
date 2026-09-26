@@ -55,6 +55,6 @@
 
 - [x] Audit for private paths/secrets/caches and broken links.
 - [x] Test isolated marketplace flow and local package; public clean-clone installation/UI install remains untested because no remote repo exists.
-- [ ] Commit package state and document remaining external publication steps.
+- [x] Commit package state locally (`c47bf46`) and document external publication steps. A public GitHub remote could not be created because GitHub CLI is not authenticated; the Codex desktop plugin install/use/update path also remains untested.
 
 The public GitHub owner/repository, verified publisher identity, and official Plugins Directory review remain external inputs; they are not fabricated or assumed.
